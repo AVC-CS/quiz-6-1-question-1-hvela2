@@ -10,19 +10,6 @@ int getPrevPrime(int end);
 bool isPrime(int n);
 
 
-int begin, end;
- int primeAfter, primeBefore;
-
-getAmounts(begin, end);
-primeAfter = getNextPrime(begin);
-cout << "Prime after" << begin << " is " << primeAfter << endl;
-primeBefore = getPrevPrime(end);
-cout << "Prime before" << end << " is " << primeBefore << endl;
-
-return 0;
-
-
-
 // ******************************
 // Implement all your functions here
 // ******************************
