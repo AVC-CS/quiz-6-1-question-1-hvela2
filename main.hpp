@@ -11,13 +11,13 @@ bool isPrime(int n);
 
 int main(){
     int begin, end;
-    int primeAfter, primeBefore
+    int primeAfter, primeBefore;
 
     getAmounts(begin, end);
     primeAfter = getNextPrime(begin);
-    cout << "Prime after" << begin << "is" << primeAfter << endl;
+    cout << "Prime after" << begin << " is " << primeAfter << endl;
     primeBefore = getPrevPrime(end);
-    cout << "Prime before" << end << "is" << primeBefore << endl;
+    cout << "Prime before" << end << " is " << primeBefore << endl;
 
     return 0;
 
@@ -37,7 +37,7 @@ void getAmounts(int& begin, int& end){
 bool isPrime(int n){
     if(n <= 1) return false;
     for (int i = 2; i*i <=n; i++) {
-        if(n % 1 == 0) return false;
+        if(n % i == 0) return false;
     }
     return true;
 }
