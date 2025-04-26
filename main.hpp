@@ -9,7 +9,7 @@ int getNextPrime(int begin);
 int getPrevPrime(int end);
 bool isPrime(int n);
 
-int main(){
+
     int begin, end;
     int primeAfter, primeBefore;
 
@@ -21,7 +21,7 @@ int main(){
 
     return 0;
 
-}
+
 
 // ******************************
 // Implement all your functions here
